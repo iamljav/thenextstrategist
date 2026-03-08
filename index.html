@@ -7,7 +7,7 @@
     <style>
         body {
             margin: 0;
-            padding: 80px 20px;
+            padding: 100px 20px;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-weight: 300;
             text-align: center;
@@ -20,17 +20,17 @@
         }
 
         .logo {
-            width: 5000px;
+            width: 500px;
             height: auto;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
         }
 
         .content-text {
-            font-size: 20px;
+            font-size: 18px;
             line-height: 1.6;
-            max-width: 600px;
+            max-width: 500px;
             margin-bottom: 40px;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.02em;
         }
 
         .discord-link {
@@ -39,22 +39,34 @@
             gap: 12px;
             color: white;
             text-decoration: none;
-            font-size: 18px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            padding: 12px 24px;
-            border-radius: 4px;
-            transition: background 0.2s ease;
+            font-size: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 12px 28px;
+            border-radius: 2px;
+            transition: all 0.2s ease;
         }
 
         .discord-link:hover {
-            background: rgba(255, 255, 255, 0.1);
+            background: white;
+            color: #002AE7;
         }
 
         .discord-icon {
-            width: 24px;
-            height: 24px;
-            /* This filter turns the black SVG icon to white */
+            width: 20px;
+            height: 20px;
             filter: brightness(0) invert(1);
+        }
+
+        .discord-link:hover .discord-icon {
+            /* Matches icon color to the background blue on hover */
+            filter: invert(19%) sepia(91%) saturate(3585%) hue-rotate(224deg) brightness(91%) contrast(108%);
+        }
+
+        /* Responsive adjustment for mobile screens */
+        @media (max-width: 600px) {
+            .logo {
+                width: 90%;
+            }
         }
     </style>
 </head>
@@ -63,10 +75,10 @@
     <img src="logo.png" alt="The Next Strategist Logo" class="logo">
 
     <div class="content-text">
-        [Insert your text here]
+        Strategic research and development.
     </div>
 
-    <a href="https://discord.gg/your-invite-code" class="discord-link">
+    <a href="https://discord.gg/8B97MzKC92" class="discord-link" target="_blank">
         <img src="https://cdn.simpleicons.org/discord" alt="Discord" class="discord-icon">
         <span>Join the Discord</span>
     </a>
