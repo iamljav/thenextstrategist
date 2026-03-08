@@ -7,35 +7,54 @@
     <style>
         body {
             margin: 0;
-            padding: 60px 20px;
+            padding: 80px 20px;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-weight: 300;
             text-align: center;
+            background-color: #002AE7;
+            color: white;
             -webkit-font-smoothing: antialiased;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .logo {
-            width: 200px;
+            width: 220px;
             height: auto;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
         .content-text {
-            font-size: 18px;
+            font-size: 20px;
             line-height: 1.6;
-            margin-bottom: 20px;
-            color: #333;
+            max-width: 600px;
+            margin-bottom: 40px;
+            letter-spacing: 0.5px;
         }
 
         .discord-link {
-            display: inline-block;
-            color: #000;
-            text-decoration: underline;
-            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 12px 24px;
+            border-radius: 4px;
+            transition: background 0.2s ease;
         }
 
         .discord-link:hover {
-            color: #5865F2; /* Discord Blue */
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .discord-icon {
+            width: 24px;
+            height: 24px;
+            /* This filter turns the black SVG icon to white */
+            filter: brightness(0) invert(1);
         }
     </style>
 </head>
@@ -44,10 +63,13 @@
     <img src="logo.png" alt="The Next Strategist Logo" class="logo">
 
     <div class="content-text">
-        Enter your primary landing page text here.
+        [Insert your text here]
     </div>
 
-    <a href="https://discord.gg/your-invite-code" class="discord-link">Join the Discord</a>
+    <a href="https://discord.gg/your-invite-code" class="discord-link">
+        <img src="https://cdn.simpleicons.org/discord" alt="Discord" class="discord-icon">
+        <span>Join the Discord</span>
+    </a>
 
 </body>
 </html>
