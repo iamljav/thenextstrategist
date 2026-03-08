@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,11 +26,15 @@
         }
 
         .content-text {
-            font-size: 18px;
-            line-height: 1.6;
-            max-width: 500px;
-            margin-bottom: 40px;
-            letter-spacing: 0.02em;
+            font-size: 20px;
+            line-height: 1.5;
+            max-width: 600px;
+            margin-bottom: 50px;
+            letter-spacing: 0.01em;
+        }
+
+        .content-text p {
+            margin-bottom: 24px;
         }
 
         .discord-link {
@@ -58,14 +62,15 @@
         }
 
         .discord-link:hover .discord-icon {
-            /* Matches icon color to the background blue on hover */
             filter: invert(19%) sepia(91%) saturate(3585%) hue-rotate(224deg) brightness(91%) contrast(108%);
         }
 
-        /* Responsive adjustment for mobile screens */
         @media (max-width: 600px) {
             .logo {
                 width: 90%;
+            }
+            .content-text {
+                font-size: 18px;
             }
         }
     </style>
@@ -75,7 +80,19 @@
     <img src="logo.png" alt="The Next Strategist Logo" class="logo">
 
     <div class="content-text">
-        Strategic research and development.
+        <p>
+            The Next Strategist continua ad innovare <br>
+            l’approccio alla mentorship.
+        </p>
+        <p>
+            L’organizzazione è in procinto <br>
+            di diventare una DAO.
+        </p>
+        <p>
+            Da oggi tutte le interazioni <br>
+            con i mentor disponibili avverranno <br>
+            attraverso il nostro server Discord.
+        </p>
     </div>
 
     <a href="https://discord.gg/8B97MzKC92" class="discord-link" target="_blank">
